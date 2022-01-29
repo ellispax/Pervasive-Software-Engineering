@@ -5,6 +5,17 @@ from dbConnect import getConnect
 
 mydb = getConnect()
 
+def get_stamp():
+    yy = dt.datetime.today().year
+    mm = dt.datetime.today().month
+    dd = dt.datetime.today().day
+    hh = dt.datetime.today().hour
+    m = dt.datetime.today().minute
+    ss = dt.datetime.today().second
+    #print(str(yy), str(mm), str(dd), str(hh), str(m), str(ss))
+    Tstamp = (str(yy)+str(mm)+str(dd)+str(hh)+str(m)+str(ss))
+    return Tstamp
+
 def insert(plate,stamp, desig):
     t_in = dt.datetime.now()
     

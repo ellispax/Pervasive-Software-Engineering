@@ -1,8 +1,13 @@
 from picamera import PiCamera
 from time import sleep
 
-camera = PiCamera()
-camera.start_preview()
-sleep(5)
-camera.capture('picture1.jpg')
-camera.stop_preview()
+
+def capture(stamp):
+    camera = PiCamera()
+    camera.start_preview()
+    sleep(5)
+    name = '/home/Documents/Project/images/'+stamp+'.jpg'
+    camera.capture(name)
+    camera.stop_preview()
+    return name
+
