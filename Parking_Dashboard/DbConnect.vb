@@ -11,7 +11,7 @@ Module DbConnect
 
     Public Function GetConnect()
         'conn = New SqlConnection("server=ELLIS_PAX-PC\MAPAKAME;Trusted_Connection = True;database=Shop;")
-        conn = New MySqlConnection("server=rds-pervasive-proj.cb3epmfrlspm.us-east-2.rds.amazonaws.com; uid=admin;pwd=mapakame0605;database=pervasivedb;")
+        conn = New MySqlConnection("server=SERVER_NAME; uid=USERNAME;pwd=PASSWORD;database=DB_NAME")
         'conn = New SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\SCSdb.mdf;Integrated Security=True")
         Return conn
     End Function
