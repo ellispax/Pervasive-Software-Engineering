@@ -1,0 +1,14 @@
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\Parking_Dashboard.exe
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\Parking_Dashboard.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\Parking_Dashboard.deps.json
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\Parking_Dashboard.runtimeconfig.json
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\Parking_Dashboard.pdb
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\MySql.Data.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\Google.Protobuf.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\ZstdNet.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\K4os.Compression.LZ4.Streams.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\BouncyCastle.Crypto.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\Ubiety.Dns.Core.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\K4os.Compression.LZ4.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\K4os.Hash.xxHash.dll
+C:\Users\5stars\OneDrive\Desktop\Pervasive_Software_Engineering_Project_Proposal_Ellis\setup\MySql.Data.xml
