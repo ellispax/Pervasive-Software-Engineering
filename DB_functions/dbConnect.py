@@ -6,10 +6,10 @@ import datetime as dt
 def getConnect():
 
     mydb = db.connect(
-        host = "rds-pervasive-proj.cb3epmfrlspm.us-east-2.rds.amazonaws.com",
-        user= "admin",
-        password="mapakame0605",
-        database="pervasivedb")
+        host = "SERVER NAME",
+        user= "USERNAME",
+        password="PASSWORD",
+        database="DB_NAME")
     return mydb
 # DB = getConnect()
 # print(DB)
