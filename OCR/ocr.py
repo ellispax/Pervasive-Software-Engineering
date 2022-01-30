@@ -5,7 +5,7 @@ import json
 #this is connected to the OPEN ALPR API that is used for licence plate recognition
 #Add your secret Key and Change country code in the URL (mine is id for Indonesia)
 def ocr(IMAGE_PATH):
-    SECRET_KEY = 'sk_b500441da41de5976c9b0a81'
+    SECRET_KEY = 'Secret Key'
     with open(IMAGE_PATH, 'rb') as image_file:
         img_base64 = base64.b64encode(image_file.read())
 
