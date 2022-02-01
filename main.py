@@ -24,7 +24,7 @@ led_red_out = 31
 
 #buttons for visitor
 button1 = 22
-button2 = 33
+
 
 #Setup the pins as Input and Output according to components
 GPIO.setwarnings(False)

@@ -1,0 +1,66 @@
+-- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
+--
+-- Host: rds-pervasive-proj.cb3epmfrlspm.us-east-2.rds.amazonaws.com    Database: pervasivedb
+-- ------------------------------------------------------
+-- Server version	8.0.23
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
+SET @@SESSION.SQL_LOG_BIN= 0;
+
+--
+-- GTID state at the beginning of the backup 
+--
+
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '';
+
+--
+-- Table structure for table `parking`
+--
+
+DROP TABLE IF EXISTS `parking`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `parking` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `number_plate` varchar(50) NOT NULL,
+  `time_in` varchar(20) DEFAULT NULL,
+  `time_out` varchar(20) DEFAULT NULL,
+  `designation` varchar(25) NOT NULL,
+  `stamp` varchar(10) NOT NULL,
+  `status` varchar(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `parking_chk_1` CHECK ((`designation` in (_utf8mb4'resident',_utf8mb4'visitor')))
+) ENGINE=InnoDB AUTO_INCREMENT=22020018 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `parking`
+--
+
+LOCK TABLES `parking` WRITE;
+/*!40000 ALTER TABLE `parking` DISABLE KEYS */;
+INSERT INTO `parking` VALUES (22020001,'ABX-123','0000-00-00 00:00:00','0000-00-00 00:00:00','resident','',''),(22020002,'ABC-111','2022-01-11 19:10:50','0000-00-00 00:00:00','visitor','','IN'),(22020003,'B9674S','2022-01-13 09:15:08.','2022-01-13 10:12:14.','resident','','OUT'),(22020004,'ABX-122','2022-01-18 23:43:55','2022-01-19 03:40:19.','resident','2022011823','OUT'),(22020009,'B2743TZA','2022-01-19 04:43:10.','2022-01-19 04:46:19.','resident','2022119443','OUT'),(22020010,'B2743TZA','2022-01-19 05:15:06.','2022-01-19 05:15:56.','resident','2022119515','OUT'),(22020011,'B2743TZA','2022-01-19 06:21:13.','2022-01-19 06:21:51.','resident','2022119621','OUT'),(22020012,'B2743TZA','2022-01-19 06:31:45.','2022-01-19 06:32:26.','resident','2022119631','OUT'),(22020013,'B2743TZA','2022-01-19 07:11:22.','2022-01-30 08:59:11.','resident','2022119711','OUT'),(22020014,'B2743TZA','2022-01-30 08:49:11.','2022-01-30 09:03:10.','resident','2022130849','OUT'),(22020015,'B2743TZA','2022-01-30 09:01:37.','2022-01-30 10:23:33.','resident','2022130913','OUT'),(22020016,'B2743TZA','2022-01-30 10:25:10.','2022-01-30 10:26:02.','resident','2022130102','OUT'),(22020017,'B2743TZA','2022-01-30 10:34:04.','2022-01-30 10:35:08.','resident','2022130103','OUT');
+/*!40000 ALTER TABLE `parking` ENABLE KEYS */;
+UNLOCK TABLES;
+SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-02-01 12:07:55
